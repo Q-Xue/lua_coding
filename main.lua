@@ -65,4 +65,30 @@ print(name)
 
 
 -- --------------------------- table ----------------------------
--- TODO: soul of the lua language. following the notes and practice all table features
+-- 1. foo.name = foo["name"] foo["10"] works but foo.10 never work!!
+foo = {"Valio","Sisu",name="Valio",}
+foo.name = "Simu"
+foo["10"] = "None"
+print(foo[1],foo[3],foo["name"],foo[10],foo["10"])
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
