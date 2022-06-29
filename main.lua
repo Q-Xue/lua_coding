@@ -42,8 +42,8 @@ print(name)
 --     print(...)
 -- end
 
--- -- goo()
--- -- goo(1,2)
+-- goo(1,2)
+-- goo(1,2,nil,nil)
 -- goo(1,2,3,4,5)
 -- foo = {1,2,nil,nil}
 -- foo1 = table.pack(1,2,nil,nil)
@@ -66,16 +66,17 @@ print(name)
 
 -- --------------------------- table ----------------------------
 -- 1. foo.name = foo["name"] foo["10"] works but foo.10 never work!!
-foo = {"Valio","Sisu",name="Valio",}
+local foo = {"Valio","Sisu",name="Valio",}
 foo.name = "Simu"
 foo["10"] = "None"
 print(foo[1],foo[3],foo["name"],foo[10],foo["10"])
 
-
-
-
-
-
+print(table.concat(foo,'!!'))
+print(#foo)
+table.insert(foo,2,"what")
+for i = 1, #foo do
+    print(foo[i])
+end
 
 
 
