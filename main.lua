@@ -1,5 +1,5 @@
 local name = "Valio"
-print(name)
+-- print(name)
 
 -- --------------------------- function ----------------------------
 -- ---------- variable scope -----------
@@ -45,10 +45,13 @@ print(name)
 -- goo(1,2)
 -- goo(1,2,nil,nil)
 -- goo(1,2,3,4,5)
--- foo = {1,2,nil,nil}
--- foo1 = table.pack(1,2,nil,nil)
--- print(#foo)
+foo = {1,2,nil,nil}
+-- foo1 = table.pack(1,2,nil,nil,5)
+print(#foo)
 -- print(foo1.n)
+-- for key,value in pairs(foo) do
+--     print(key,value)
+-- end
 
 -- print(select(1,"a","b","c"))
 -- print(select(2,"a","b","c"))
@@ -62,21 +65,19 @@ print(name)
 
 
 
+-- -- --------------------------- table ----------------------------
+-- -- 1. foo.name = foo["name"] foo["10"] works but foo.10 never work!!
+-- local foo = {"Valio","Sisu",name="Valio",}
+-- foo.name = "Simu"
+-- foo["10"] = "None"
+-- print(foo[1],foo[3],foo["name"],foo[10],foo["10"])
 
-
--- --------------------------- table ----------------------------
--- 1. foo.name = foo["name"] foo["10"] works but foo.10 never work!!
-local foo = {"Valio","Sisu",name="Valio",}
-foo.name = "Simu"
-foo["10"] = "None"
-print(foo[1],foo[3],foo["name"],foo[10],foo["10"])
-
-print(table.concat(foo,'!!'))
-print(#foo)
-table.insert(foo,2,"what")
-for i = 1, #foo do
-    print(foo[i])
-end
+-- print(table.concat(foo,'!!'))
+-- print(#foo)
+-- table.insert(foo,2,"what")
+-- for i = 1, #foo do
+--     print(foo[i])
+-- end
 
 
 
