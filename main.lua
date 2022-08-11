@@ -47,7 +47,7 @@ local name = "Valio"
 -- goo(1,2,3,4,5)
 foo = {1,2,nil,nil}
 -- foo1 = table.pack(1,2,nil,nil,5)
-print(#foo)
+-- print(#foo)
 -- print(foo1.n)
 -- for key,value in pairs(foo) do
 --     print(key,value)
@@ -80,12 +80,12 @@ print(#foo)
 -- end
 
 
+-- --------------------------- string -----------------------
+print('\\' .. 10)
+print('10' + '3.2')
 
-
-
-
-
-
+-- --------------------------- number --------------------------
+-- no integer type but only double precision float type
 
 
 
